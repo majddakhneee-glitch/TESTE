@@ -2,7 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-# إجبار المحرك على حفظ الحروف العربية بتشفيرها الأصلي دون قلب الرموز
+# تحديد مجلد الصور لإرضاء شروط المحرك الأساسية
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# حماية النصوص العربية لمنع تداخل الحروف وانقلاب السطور
 slug:
   encoding: "unicode"
   clean_accents: false
